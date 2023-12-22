@@ -12,6 +12,7 @@ RUN apt-get update \
     && apt-get update \
     && apt-get install -y golang \
     && apt-get install -y make git lolcat figlet toilet \
+    && pip install numpy \
     && rm -rf /var/lib/apt/lists/*
 
 RUN adduser --disabled-password --home / container
